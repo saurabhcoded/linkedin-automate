@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ffffff;
+  outline: 0;
+  border: 0;
+  font-family: "DM Sans", sans-serif;
+}
+.header {
+  background-color: #4470ad;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    display: flex;
+    align-items: center;
+    .title {
+      line-height: 1rem;
+      color: white;
+      margin-left: 5px;
+    }
+  }
+  .menu-bar {
+    position: relative;
+    .btn {
+      background-color: transparent;
+      border-radius: 50rem;
+      height: 30px;
+      width: 30px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: 0.5s;
+      img {
+        margin: 0px;
+        padding-top: 2px;
+      }
+    }
+    .btn:hover {
+      background-color: #ffffff62;
+    }
+  }
+}
+.wrapper {
+  min-width: 300px;
+  min-height: 300px;
+  padding: 10px;
+
+  .btn {
+    margin-top: 5px;
+    padding: 8px 15px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .btn-group {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+  }
+  .card {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 2px dashed lightgray;
+    padding: 8px;
+    // box-shadow: 0px 0px 2px lightslategray;
+
+    .connection-card {
+      // Button Design
+      .send-btn {
+        color: white;
+        width: 100%;
+        background-color: #6888be;
+        box-shadow: 2px 2px 2px rgb(212, 212, 212);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .send-btn:hover {
+        background: #4470ad;
+        box-shadow: 2px 2px 4px rgb(212, 212, 212);
+      }
+      .cancel-btn {
+        color: white;
+        background-color: rgb(175, 175, 175);
+        box-shadow: 2px 2px 2px rgb(212, 212, 212);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: default;
+        width: 100%;
+      }
+      .cancel-btn.active {
+        background-color: tomato;
+        cursor: pointer;
+      }
+      .cancel-btn.active:hover {
+        background: rgb(249, 86, 58);
+        box-shadow: 2px 2px 4px rgb(212, 212, 212);
+      }
+
+      // Limit Design
+      .select-wrapper {
+        display: flex;
+        margin-block: 3px;
+        align-items: center;
+        justify-content: space-between;
+        .connectionSelect {
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          padding: 5px 20px 5px 5px;
+        }
+      }
+
+      // Progress Design
+      .progress {
+        margin-top: 5px;
+        visibility: hidden;
+        transition: 0.5s;
+        color: green;
+        &.active {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/assets/css/popup.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="/assets/images/main.png" height="40" width="40" alt="linkedin-automate">
+            <h2 class="title">Linkedin<br>Automate</h2>
+        </div>
+        <div class="menu-bar">
+            <button class="btn">
+                <img src="/assets/images/icons/menu-bar.svg" alt="menu">
+            </button>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="card">
+            <div class="connection-card">
+                <h2>Send Connections</h2>
+                <p>This action will send connection request to all the connection card available on your screen.</p>
+                <div class="select-wrapper">
+                    <h3>Limit</h3>
+                    <select name="connectionSelect" id="connectionSelect" class="connectionSelect">
+                        <option value="20">20 request</option>
+                        <option value="40">40 request</option>
+                        <option value="60">60 request</option>
+                        <option value="80">80 request</option>
+                        <option value="100">100 request</option>
+                    </select>
+                </div>
+                <div class="btn-group">
+                    <button class="btn send-btn">Send <img src="/assets/images/icons/connection.svg" alt="connection"></button>
+                    <button class="btn cancel-btn">Clear All <img src="/assets/images/icons/connection.svg" alt="connection"></button>
+                </div>
+                <div class="progress">
+                    <span>Total: <b class="totalRequests">0</b></span>&nbsp;/&nbsp;
+                    <span>Sent: <b class="sentRequests">0</b></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+    <script src="content-script.js"></script>
+</body>
+
+</html>

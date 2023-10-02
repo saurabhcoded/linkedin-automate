@@ -1,0 +1,36 @@
+{
+  "name": "Linkedin Automate",
+  "version": "1.0.0",
+  "description": "A Linkedin Automation Extension to Automate the tidious works such as send connection requests, delete all pending sent requests and much more.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["https://*.linkedin.com/*"],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.linkedin.com/*"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "options_page": "options.html",
+  "action": {
+    "default_icon": {
+      "16": "/assets/images/favicon-16x16.png",
+      "24": "/assets/images/favicon-32x32.png",
+      "32": "/assets/images/favicon-32x32.png",
+      "192": "/assets/images/android-chrome-192x192.png",
+      "512": "/assets/images/android-chrome-512x512.png"
+    },
+    "default_title": "Linkedin Automate",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "/assets/images/favicon-16x16.png",
+    "24": "/assets/images/favicon-32x32.png",
+    "32": "/assets/images/favicon-32x32.png",
+    "192": "/assets/images/android-chrome-192x192.png",
+    "512": "/assets/images/android-chrome-512x512.png"
+  },
+  "manifest_version": 3
+}
