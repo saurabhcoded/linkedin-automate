@@ -13,7 +13,7 @@ A Linkedin Automation Extension to Automate the tidious works such as send conne
 ## Screenshots
 
   <img src="demo/demo1.png" alt="Demo1" width="30.7%">
-  <img src="demo/demo2.png" alt="Demo2" width="67.3%">
+  <img src="demo/demo2.png" alt="Demo2" width="65.3%">
   <img src="demo/demo3.png" alt="Demo3" width="100%">
 
 ## Getting Started
