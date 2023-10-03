@@ -24,7 +24,7 @@ A Linkedin Automation Extension to Automate the tidious works such as send conne
 2. Open Chrome Manage Extensions
 3. Enable Development Mode
 4. Load the Extension from folder as demo.
-4. Now click on button after ( preferred visit the my network tab then click send ).
+5. Now click on button after ( preferred visit the my network tab then click send ).
 
 ## Contributing
 

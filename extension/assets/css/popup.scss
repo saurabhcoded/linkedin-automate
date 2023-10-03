@@ -71,9 +71,11 @@ body {
     padding: 8px;
     // box-shadow: 0px 0px 2px lightslategray;
 
-    .connection-card {
+    .connection-card,
+    .withdraw-card {
       // Button Design
-      .send-btn {
+      .send-btn,
+      .remove-req-btn {
         color: white;
         width: 100%;
         background-color: #6888be;
@@ -82,7 +84,8 @@ body {
         align-items: center;
         justify-content: space-around;
       }
-      .send-btn:hover {
+      .send-btn:hover,
+      .remove-req-btn:hover {
         background: #4470ad;
         box-shadow: 2px 2px 4px rgb(212, 212, 212);
       }
@@ -120,7 +123,8 @@ body {
       }
 
       // Progress Design
-      .progress {
+      .progress,
+      .removeProgress {
         margin-top: 5px;
         visibility: hidden;
         transition: 0.5s;
